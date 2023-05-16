@@ -75,15 +75,4 @@ export default {
 .single-card img {
     height: 7rem;
 }
-
-.btn {
-    background-color: #377DFF;
-    color: white;
-    font-size: 0.9rem;
-}
-
-.text-grey {
-    color: #8E989F;
-    font-size: 0.9rem;
-}
 </style>

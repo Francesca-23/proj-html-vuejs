@@ -10,7 +10,7 @@ export default {
     <div>
 
         <nav class="d-flex justify-content-between align-items-center w-75 m-auto">
-            <img src="/img/logo-2.png" alt="" height="35px">
+            <img src="/img/logo-2.png" alt="logo" height="35px">
 
             <div class="d-flex">
                 <ul class="d-flex align-items-center pt-2">
@@ -27,7 +27,7 @@ export default {
                         <a href="#">Testimonials</a>
                     </li>
                     <li>
-                        <a href="">Contact us</a>
+                        <a href="#">Contact us</a>
                     </li>
                 </ul>
 
@@ -62,6 +62,7 @@ ul li a {
     color: black;
     margin: 0 1rem;
     padding: 0.5rem 0;
+    font: 0.9rem;
 
 }
 

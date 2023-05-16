@@ -3,12 +3,16 @@
 import { store } from '../store'
 import CardsComp from '../components/CardsComp.vue'
 import Testimonials from '../components/Testimonials.vue'
+import LatestPost from '../components/LatestPost.vue'
+import ContactsComp from '../components/ContactsComp.vue'
 
 export default {
     name: "MainComp",
     components: {
         CardsComp,
-        Testimonials
+        Testimonials,
+        LatestPost,
+        ContactsComp
     },
 
     data() {
@@ -131,6 +135,14 @@ export default {
 
         <Testimonials />
 
+        <!-- section 6 - Latest Posts-->
+
+        <LatestPost />
+
+        <!-- section 7 - Contact Team-->
+
+        <ContactsComp />
+
     </div>
 </template>
 
@@ -142,16 +154,6 @@ export default {
 
 h1 {
     line-height: 3.5rem;
-}
-
-.text-grey {
-    color: #8E989F;
-}
-
-.btn {
-    background-color: #377DFF;
-    color: white;
-    font-size: 0.9rem;
 }
 
 .box-cartoon {

@@ -4,7 +4,7 @@ export default {
     name: "Testimonials",
 
     created() {
-        // this.changeCards()
+        this.changeCards()
     },
 
     methods: {
@@ -157,19 +157,13 @@ export default {
     top: 6rem;
 }
 
-.text-grey {
-    color: #8E989F;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-}
-
 .bg-container {
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 45%, rgba(242, 247, 255, 1) 86%);
 }
 
 .container-height {
-    height: 10rem;
+    height: 25rem;
 }
 
 .card1 {
