@@ -72,6 +72,11 @@ export default {
     height: 9rem;
 }
 
+.single-card:hover {
+    background-color: #6CDAC1;
+    color: white;
+}
+
 .single-card img {
     height: 7rem;
 }
