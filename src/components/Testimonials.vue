@@ -104,7 +104,7 @@ export default {
                             </div>
                             <div class="text-center">
                                 <span><strong>Mark Walker </strong></span>
-                                <span class="text-grey">- CEO Sofbox</span>
+                                <span class="text-grey">- Engineer Sofbox</span>
                             </div>
                             <p class="text-grey pt-4">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit dolor, consectetur

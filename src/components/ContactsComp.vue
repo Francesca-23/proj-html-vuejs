@@ -17,8 +17,42 @@ export default {
 
             <div class="row">
 
-                <div class="col-6">
+                <div id="map-container" class="col-6 position-relative">
+
                     <img src="/img/StaticMapService.GetMapIma.png" alt="maps-image" class="map">
+
+                    <div class="d-flex destination">
+                        <div>
+                            <p><strong>Storey Ave</strong></p>
+                            <p>San Francisco, California 94129</p>
+                            <div class="pt-2">
+                                <a href="#">Visualizza mappa più grande</a>
+                            </div>
+                        </div>
+                        <div class="ms-3">
+                            <div class="arrow-container">
+                                <img src="/img/indicazione-stradale.png" alt="" height="30px">
+                            </div>
+                            <a href="#">Indicazioni...</a>
+                        </div>
+                    </div>
+
+                    <div class="zoom">
+                        <div class="pb-2"><i class="fa-solid fa-plus fa-lg"></i></div>
+                        <hr class="m-0">
+                        <div class="pt-2"><i class="fa-solid fa-minus fa-lg"></i></div>
+                    </div>
+
+                    <div class="pointer">
+                        <img src="/img/pointer-map.png" alt="pointer" height="40px">
+                    </div>
+
+                    <div class="dati-mappa d-flex">
+                        <p>Dati mappa @2020</p>
+                        <p>Termini e condizioni d'uso</p>
+                        <p>Segnala un errore nella mappa</p>
+                    </div>
+
                 </div>
 
                 <div class="col-6">
@@ -71,6 +105,50 @@ export default {
 <style scoped>
 p {
     margin-bottom: 0;
+}
+
+.arrow-container {
+    width: fit-content;
+    margin: auto;
+}
+
+#map-container .destination {
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    margin: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+#map-container .pointer {
+    position: absolute;
+    top: 10rem;
+    right: 15rem;
+}
+
+#map-container .zoom {
+    background-color: white;
+    color: #495057;
+    padding: 0.3rem 0.6rem;
+    position: absolute;
+    top: 18rem;
+    right: 1rem;
+
+}
+
+#map-container .dati-mappa {
+    position: absolute;
+    top: 23.5rem;
+    right: 0;
+}
+
+#map-container .dati-mappa p {
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 0.6rem;
+    margin-right: 0.5rem;
+    padding: 0 0.2rem;
 }
 
 .map {
