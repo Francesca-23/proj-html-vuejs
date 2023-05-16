@@ -1,9 +1,15 @@
 <script>
 
 import { store } from '../store'
+import CardsComp from '../components/CardsComp.vue'
+import Testimonials from '../components/Testimonials.vue'
 
 export default {
     name: "MainComp",
+    components: {
+        CardsComp,
+        Testimonials
+    },
 
     data() {
         return {
@@ -116,6 +122,14 @@ export default {
 
             </div>
         </div>
+
+        <!-- section 4 - Popular features-->
+
+        <CardsComp />
+
+        <!-- section 5 - Testimonials-->
+
+        <Testimonials />
 
     </div>
 </template>

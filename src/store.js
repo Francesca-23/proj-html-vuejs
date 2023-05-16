@@ -13,6 +13,41 @@ export const store = reactive(
                     "Social management"
                 ]
             }
+        ],
+
+        featuresCards: [
+            {
+                title: "Customized Invoices",
+                img: "/img/graphic.svg"
+            },
+            {
+                title: "Stock Management",
+                img: "/img/paper-plane.svg"
+            },
+            {
+                title: "Receivable & Payables",
+                img: "/img/user.svg"
+            },
+            {
+                title: "Manage Buying",
+                img: "/img/user.svg"
+            },
+            {
+                title: "Powerful and Secure",
+                img: "/img/lock.svg"
+            },
+            {
+                title: "Fastest Return Filing",
+                img: "/img/user.svg"
+            },
+            {
+                title: "Monthly Detailed",
+                img: "/img/document.svg"
+            },
+            {
+                title: "Product Management",
+                img: "/img/thumb.svg"
+            },
         ]
 
     }
