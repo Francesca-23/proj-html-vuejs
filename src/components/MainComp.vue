@@ -17,7 +17,35 @@ export default {
 
     data() {
         return {
-            store
+            store,
+            activeCard: 0
+        }
+    },
+
+    methods: {
+        scrollDown() {
+            let container = document.querySelector('.tipCards')
+
+            if (this.activeCard == this.store.tipsCards.length - 1) {
+
+                this.activeCard = this.store.tipsCards.length - 1
+            } else {
+                container.scrollTop += 150
+                this.activeCard++
+            }
+
+        },
+
+        scrollTop() {
+            let container = document.querySelector('.tipCards')
+
+            if (this.activeCard == 0) {
+
+                this.activeCard = 0
+            } else {
+                container.scrollTop -= 150
+                this.activeCard--
+            }
         }
     }
 
@@ -93,35 +121,34 @@ export default {
                         boot fanny!
                     </p>
 
-                    <div class="d-flex align-items-center shadow py-3 px-2">
-                        <div>
-                            <img src="/img/510.png" alt="analysis">
-                        </div>
-                        <div class="ms-4">
-                            <h3 class="blue-text">Reporting Analysis</h3>
-                            <p>
-                                It is a long established fact that a reader will be distracted by the redable content of a
-                                page when looking at this layout.
-                            </p>
+                    <div class="text-center arrow-button  mb-1" @click="scrollTop()">
+                        <i class="fa-solid fa-chevron-up fa-lg"></i>
+                    </div>
+
+                    <div class="tipCards">
+                        <div v-for="(element, index) in store.tipsCards" :key="activeCard"
+                            class="tipCard d-flex align-items-center m-3 py-3 px-2"
+                            :class="activeCard == index ? 'shadow' : ''">
+                            <div>
+                                <img :src="element.img" alt="tips">
+                            </div>
+                            <div class="ms-4">
+                                <h3 class="blue-text">{{ element.title }}</h3>
+                                <p>
+                                    {{ element.text }}
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center py-4 px-2">
-                        <div>
-                            <img src="/img/511.png" alt="analysis">
-                        </div>
-                        <div class="ms-4">
-                            <h3>Technical SEO Audit</h3>
-                            <p>
-                                It is a long established fact that a reader will be distracted by the redable content of a
-                                page when looking at this layout.
-                            </p>
-                        </div>
+                    <div class="text-center arrow-button mt-1" @click="scrollDown()">
+                        <i class="fa-solid fa-chevron-down fa-lg"></i>
                     </div>
+
                 </div>
 
                 <div class="col-6 align-self-end pb-5">
-                    <img src="/img/509.jpeg" alt="cartoon" height="350px">
+                    <img src="/img/509.jpeg" alt="cartoon" class="img-cartoon">
                 </div>
 
             </div>
@@ -192,6 +219,20 @@ h1 {
 }
 
 /* section 3 - Get Tips Tricks */
+
+.tipCards {
+    overflow-y: hidden;
+    height: 20rem;
+}
+
+.img-cartoon {
+    height: 21rem;
+}
+
+.arrow-button {
+    cursor: pointer;
+    color: #8E989F;
+}
 
 .getTips p {
     color: #8E989F;

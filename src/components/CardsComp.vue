@@ -50,7 +50,7 @@ export default {
                 <div class="d-flex flex-wrap">
                     <div v-for="(element, index) in store.featuresCards" :key="index" class="single-card shadow">
                         <p class="m-3">{{ element.title }} </p>
-                        <div class="px-3">
+                        <div class="px-3 icon-img">
                             <img :src="element.img" alt="icon">
                         </div>
                     </div>
@@ -59,7 +59,7 @@ export default {
                 <div class="otherCards d-none">
                     <div v-for="(element, index) in store.moreFeaturesCards" :key="index" class="single-card shadow">
                         <p class="m-3">{{ element.title }} </p>
-                        <div class="px-3">
+                        <div class="px-3 icon-img">
                             <img :src="element.img" alt="icon">
                         </div>
                     </div>
@@ -95,5 +95,13 @@ export default {
 
 .single-card img {
     height: 7rem;
+}
+
+.icon-img {
+    height: 4rem;
+}
+
+.icon-img img {
+    height: 100%;
 }
 </style>

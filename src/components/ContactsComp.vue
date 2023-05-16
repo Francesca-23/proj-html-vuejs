@@ -1,7 +1,26 @@
 <script>
 
 export default {
-    name: "ContactsComp"
+    name: "ContactsComp",
+
+    data() {
+        return {
+            name: '',
+            email: '',
+        }
+    },
+
+    methods: {
+        contact() {
+            if (this.name != '' && this.email != '') {
+                let message = document.querySelector('.message')
+                message.classList.remove('d-none')
+            } else {
+                let error = document.querySelector('.error')
+                error.classList.remove('d-none')
+            }
+        }
+    }
 }
 
 </script>
@@ -83,8 +102,8 @@ export default {
                         <h5 class="mb-4">Get in touch</h5>
 
                         <div class="mb-3 d-flex">
-                            <input type="text" class="form-control me-2" placeholder="Your Name">
-                            <input type="email" class="form-control" placeholder="Your Email">
+                            <input type="text" class="form-control me-2" placeholder="Your Name*" v-model="name">
+                            <input type="email" class="form-control" placeholder="Your Email*" v-model="email">
                         </div>
                         <div class="mb-3">
                             <input type="text" class="form-control me-2" placeholder="Your Subject">
@@ -92,7 +111,10 @@ export default {
                         <div class="mb-3">
                             <textarea class="form-control" rows="7" placeholder="Your Message"></textarea>
                         </div>
-                        <button type="button" class="btn">Send Message</button>
+
+                        <p class="message text-grey pb-3 d-none">Grazie per la fiducia, ti contatteremo presto!</p>
+                        <p class="error text-grey text-danger pb-3 d-none">Errore: compila i campi obbligatori.</p>
+                        <button type="button" class="btn" @click="contact()">Send Message</button>
                     </div>
                 </div>
 

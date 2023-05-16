@@ -15,57 +15,90 @@ export const store = reactive(
             }
         ],
 
+        tipsCards: [
+            {
+                img: "/img/510.png",
+                title: "Reporting Analysis",
+                text: "It is a long established fact that a reader will be distracted by the redable content of a page when looking at this layout."
+            },
+            {
+                img: "/img/511.png",
+                title: "Technical SEO Audit",
+                text: "It is a long established fact that a reader will be distracted by the redable content of a page when looking at this layout."
+            },
+            {
+                img: "/img/510.png",
+                title: "Data-Driven Decision Making",
+                text: "Learn how to effectively analyze and interpret data to make informed marketing decisions that drive measurable results."
+            },
+            {
+                img: "/img/511.png",
+                title: "Targeted Advertising",
+                text: "Gain insights into audience segmentation and targeting strategies to ensure your marketing messages reach relevant audience."
+            },
+            {
+                img: "/img/510.png",
+                title: "Social Media Engagement",
+                text: "Discover effective strategies to engage and connect with your social media audience authentically."
+            },
+            {
+                img: "/img/511.png",
+                title: "Strategies for Consistent Branding",
+                text: "Discover the importance of consistent branding across all channels and learn techniques to build a strong brand identity."
+            },
+        ],
+
         featuresCards: [
             {
                 title: "Customized Invoices",
-                img: "/img/graphic.svg"
+                img: "/img/graphic-icon.png"
             },
             {
                 title: "Stock Management",
-                img: "/img/paper-plane.svg"
+                img: "/img/plane-icon.png"
             },
             {
-                title: "Receivable & Payables",
-                img: "/img/user.svg"
+                title: "Receivable Payables",
+                img: "/img/user-icon.png"
             },
             {
                 title: "Manage Buying",
-                img: "/img/user.svg"
+                img: "/img/user2-icon.png"
             },
             {
                 title: "Powerful and Secure",
-                img: "/img/lock.svg"
+                img: "/img/circles-icon.png"
             },
             {
                 title: "Fastest Return Filing",
-                img: "/img/user.svg"
+                img: "/img/user-icon.png"
             },
             {
                 title: "Monthly Detailed",
-                img: "/img/document.svg"
+                img: "/img/document-icon.png"
             },
             {
                 title: "Product Management",
-                img: "/img/thumb.svg"
+                img: "/img/thumb-icon.png"
             },
         ],
 
         moreFeaturesCards: [
             {
                 title: "Customized Invoices",
-                img: "/img/graphic.svg"
+                img: "/img/graphic-icon.png"
             },
             {
                 title: "Stock Management",
-                img: "/img/paper-plane.svg"
+                img: "/img/plane-icon.png"
             },
             {
-                title: "Receivable & Payables",
-                img: "/img/user.svg"
+                title: "Receivable Payables",
+                img: "/img/user-icon.png"
             },
             {
                 title: "Manage Buying",
-                img: "/img/user.svg"
+                img: "/img/circles-icon.png"
             },
         ],
 
