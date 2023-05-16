@@ -9,6 +9,13 @@ export default {
         return {
             store
         }
+    },
+
+    methods: {
+        moreFeatures() {
+            document.querySelector('.otherCards').classList.remove('d-none')
+            document.querySelector('.otherCards').classList.add('d-flex')
+        }
     }
 
 }
@@ -36,12 +43,21 @@ export default {
                         </p>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn ms-5">Explore more features</button>
+                        <button type="button" class="btn ms-5" @click="moreFeatures()">Explore more features</button>
                     </div>
                 </div>
 
                 <div class="d-flex flex-wrap">
                     <div v-for="(element, index) in store.featuresCards" :key="index" class="single-card shadow">
+                        <p class="m-3">{{ element.title }} </p>
+                        <div class="px-3">
+                            <img :src="element.img" alt="icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="otherCards d-none">
+                    <div v-for="(element, index) in store.moreFeaturesCards" :key="index" class="single-card shadow">
                         <p class="m-3">{{ element.title }} </p>
                         <div class="px-3">
                             <img :src="element.img" alt="icon">
